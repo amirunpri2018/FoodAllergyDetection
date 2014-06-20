@@ -1,0 +1,62 @@
+body {
+	background: white;
+}
+
+h1 {
+	color: black;
+}
+
+.col-sm-5 {
+    padding-left: 0px;
+}
+
+.navbar-default {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.8);
+    padding-right: 25px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fdebd7;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #99c5e6;
+}
+
+.navbar-default .navbar-brand {
+    background: url("/static/images/brand.png") no-repeat right;
+    height: 40px;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.header {
+	text-align: center;
+	margin-top: 90px;
+    margin-bottom: 30px;
+}
+.chart {
+    table-layout: fixed;
+    width: 100px;
+    word-wrap: break-word;
+   /* -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;*/
+}
+
+.addicon {
+    float: right;
+    background-image: url("/static/images/bigplusicon.png");
+}
+
+.addicon:hover {
+    background-image: none;
+}
+
+.alert {
+    margin-bottom: 0px;
+}

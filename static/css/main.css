@@ -1,0 +1,51 @@
+body {
+	background: url("/static/images/breakfast.jpg") no-repeat center center fixed;
+	background-size: 100%;
+}
+
+h1 {
+	color: black;
+}
+
+.navbar-default {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.8);
+    padding-right: 25px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fdebd7;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #99c5e6;
+}
+
+.navbar-default .navbar-brand {
+    background: url("/static/images/brand.png") no-repeat right;
+    height: 40px;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.header {
+	text-align: center;
+	margin-top: 90px;
+}
+
+.form {
+	margin-left: 14.5%;
+	margin-top: 35px;
+	padding: 20px;
+	background-color: rgba(253, 235, 215, 0.7);
+	color: #545454;
+	width: 315px;
+	border-radius: 10px;
+}
+
+.required_field_note {
+	color: red;
+	font-size: 12px;
+}

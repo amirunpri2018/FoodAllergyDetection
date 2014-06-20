@@ -1,0 +1,186 @@
+<html lang="en">
+	<head>
+		<title>allerfree</title>
+		<link href="/static/css/bootstrap.css" rel="stylesheet">
+		<link href="/static/css/body.css" rel="stylesheet">
+        <link href="/static/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="/static/js/bootstrap.js"></script>
+        <script src="/static/js/moment.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap-datetimepicker.min.js"></script>
+
+		<link rel="shortcut icon" href="url_for(/static/images/favicon.ico')" type="image/x-icon">
+        <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		 <!-- Navigation bar -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">FOOD JOURNAL</a></li>
+                    	<li><a href="#">ANALYSIS</a></li>
+                        <li><a href="/">MY ACCOUNT</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">LOG OUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div class="header">
+            <h1><b> Progress Report </b></h1>
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6">
+                    <div class="alert alert-info">
+                        <p>Dear goan binu, you've been doing great! Keep up the good work!</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+        	<h1><b> Food Journal </b></h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10">
+                    <div class="panel panel-default">
+                        <div clas="chart">
+                        <table class="table table-striped">
+                            <tr>
+                                <th><b>Date</b></th>
+                                <th><b>Meal</b></th>
+                                <th><b>Food</b></th>
+                                <th><b>Reaction</b></th>
+                                <th><b>Notes</b></th>
+                            </tr>
+                            <tr>
+                                <td><span class="glyphicon glyphicon-edit"></span> Monday, June 16</td>
+                                <td>Breakfast</td>
+                                <td>Clam, avocado, turkey sushi, lettuce, tomato, cream, cheese, oregano</td>
+                                <td>N/A</td>
+                                <td>Lost weight!</td>
+                            </tr>
+                            <tr>
+                                <td><span class="glyphicon glyphicon-edit"></span> Monday, June 16</td>
+                                <td>Lunch</td>
+                                <td>Bacon, avocado sandwich</td>
+                                <td>N/A</td>
+                                <td>Kept losing weight!</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                    <div class="addicon" data-toggle="modal" data-target="#myModal">
+                        <img src="/static/images/addicon.png">
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">Add New Record</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form">
+                                        <label for="date">Date: </label>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class='col-sm-5'>
+                                                    <div class="form-group">
+                                                        <div class='input-group date' id='datetimepicker5' data-date-format="MM-DD-YYYY">
+                                                            <input type='text' class="form-control" />
+                                                            <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script type="text/javascript">
+                                                    $(function () {
+                                                        $('#datetimepicker5').datetimepicker({
+                                                            pickTime: false
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="meal">Meal: </label>
+                                            <select class="form-control">
+                                                <option>Breakfast</option>
+                                                <option>Brunch</option>
+                                                <option>Lunch</option>
+                                                <option>Dinner</option>
+                                                <option>Snack</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="food">Food eaten: </label>
+                                            <span class="help-block">Please enter each item on a separate line.</span>
+                                            <textarea class="form-control" rows="2"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="reaction">Reaction(s): </label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="fatigue">
+                                                    Fatigue
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="bloating">
+                                                    Bloating
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="throat clearing">
+                                                    Throat clearing
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="weight gain">
+                                                    Weight gain
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="notes">Notes: </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
